@@ -60,7 +60,7 @@
 <nav class="nav"><button class="active" data-page="pos" onclick="showPage('pos')"><span>＋</span>POS</button><button data-page="orders" onclick="showPage('orders')"><span>▤</span>Orders</button><button data-page="reports" onclick="showPage('reports')"><span>▥</span>Reports</button><button data-page="admin" onclick="showPage('admin')"><span>⚙</span>Admin</button><button data-page="store" onclick="openStorefront()"><span>🌐</span>Website</button></nav>
 <div id="modalback" class="modalback" onclick="backdropClose(event)"><div class="modal" id="modal"></div></div><div id="toast" class="toast"></div>
 <script>
-const API_URL="https://script.google.com/macros/s/AKfycbwycIXsp7K7KI6xkM6xlByFEVv3_XXlAdLpjBVGARpl-kofKhlOzUNHQgyYSqzW9FQOUQ/exec";
+const API_URL="https://script.google.com/macros/s/AKfycbzuPT_ImMi8cnzH4o3WcVaQMGtvX5WDJxAyvumRSsicAq2pApNOeKRCXtH3UR_cmBRhtg/exec";
 let items=[],orders=[],cart={},storeCart={},activeCategory="All",storeCategory="All",settings={upiId:"",businessName:"BITEZY"},editing=null; const STORE_MODE=new URLSearchParams(location.search).get("store")==="1";
 const money=n=>"₹"+Number(n||0).toFixed(2).replace(/\.00$/,"");
 const esc=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
